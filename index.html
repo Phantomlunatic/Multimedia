@@ -24,8 +24,12 @@
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
 <script src="index.js"></script>
 <script>
-// Global Scripts
-	</script>
+  // Check orientation on initial load
+  if (window.orientation !== 90 && window.orientation !== -90) {
+    alert('Silakan putar perangkat Anda ke mode landscape.');
+  }
+  // Global Scripts
+</script>
 <script type='text/javascript' src='libs/mpiLib.js'></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
